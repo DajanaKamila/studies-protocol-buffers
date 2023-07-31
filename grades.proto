@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "proto";
+option java_outer_classname = "Grades";
+
+message Student {
+  string name = 1;
+  repeated Subject subject = 2;
+}
+
+message Subject {
+  string name = 1;
+  repeated int32 grades = 2;
+}
